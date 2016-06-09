@@ -19,6 +19,13 @@
 		background: #161616;
 	}
 
+	.carousel-inner > .item > img,
+    .carousel-inner > .item > a > img
+    {
+    	  width: 70%;
+      	margin: auto;
+  	}
+
 	body,input,textarea,select
 	{
 		font-family: 'Roboto', sans-serif;
