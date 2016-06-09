@@ -10,6 +10,7 @@
 
 	body
 	{
+		background-image: url("images/header.jpg");
 
 	}
 
@@ -18,6 +19,14 @@
 		padding-top: 40px;
 	}
 	*/
+
+	.section
+	{
+		display: block;
+    	position: relative;
+    	top: -80px;
+    	visibility: hidden;
+	 }
 
 	body,input,textarea,select
 	{
@@ -87,6 +96,7 @@
 	.sponsimages
 	{
 		padding: 1em 0em 0.5em;
+		background-color: red;
 	}
 	
 	#featured h3
