@@ -771,7 +771,9 @@
 	#header
 	{
 		position: relative;
-		/*background: url(../images/header.jpg);*/
+		background: url(../images/header.jpg);
+		background-repeat:   no-repeat;
+    	background-position: center center;         
 		background-attachment: fixed;
 		background-size: cover;
 		height: 100%;
