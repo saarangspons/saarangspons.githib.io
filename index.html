@@ -25,14 +25,14 @@
 				<!-- Nav -->
 				<nav id="nav" class="nav nav-bar fixed pagenav" style="position: fixed; width: 100%; opacity: 0.6; background-color: black; font-weight: bold; z-index: 300; margin-left: 0%; margin-right: 0%; padding-right: 0%; padding-left: 0%;">
 					<ul style="margin-left: 0%; margin-right: 0%; padding-right: 0%; padding-left: 0%;">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#aboutus">About Us</a></li>
-						<li><a href="#proshows">Proshows</a></li>
-						<li><a href="#events">Events</a></li>
-						<li><a href="#out_events">Outreach Events</a></li>
-						<li><a href="#past_spons">Previous Sponsors</a></li>
-						<li><a href="#contact">Reviews</a></li>
-						<li><a href="#end">Contact us</a></li>
+						<li class="l2"><a href="#home">Home</a></li>
+						<li class="l2"><a href="#aboutus">About Us</a></li>
+						<li class="l2"><a href="#proshows">Proshows</a></li>
+						<li class="l2"><a href="#events">Events</a></li>
+						<li class="l2"><a href="#out_events">Outreach Events</a></li>
+						<li class="l2"><a href="#past_spons">Previous Sponsors</a></li>
+						<li class="l2"><a href="#contact">Reviews</a></li>
+						<li class="l1"><a href="#contact">Contact us</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -209,7 +209,7 @@
 	<br>
 
 	<div class="container" style="background-color: black;" id="out_events">
-	  
+	<br>  
 	  <div id="myCarousel3" class="carousel slide"  data-ride="carousel" data-slide-to="0">
 	    <!-- Indicators -->
 	    <ol class="carousel-indicators">
@@ -296,18 +296,18 @@
 	  <div id="myCarousel5" class="carousel slide" data-ride="carousel" data-slide-to="0">
 	    <!-- Indicators -->
 	    <ol class="carousel-indicators">
-	      <li data-target="#myCarousel5" data-slide-to="0" class="active"></li>
-	      <li data-target="#myCarousel5" data-slide-to="1"></li>
+	      <li data-target="#myCarousel5" data-slide-to="0" class="active" id="list1"></li>
+	      <li data-target="#myCarousel5" data-slide-to="1" id="list2"></li>
 	      
 	    </ol>
 
 	    <!-- Wrapper for slides -->
 	    <div class="carousel-inner" role="listbox">
-	      <div class="item active">
+	      <div class="item active" id="con1">
 	        <img src="images/spons26.jpg" alt="Chania" width="460" height="345">
 	      </div>
 
-	      <div class="item">
+	      <div class="item" id="con2">
 	        <img src="images/spons29.jpg" alt="Chania" width="460" height="345">
 	      </div>
 	    
@@ -354,6 +354,23 @@
 		console.log(a);
 
 		$('.current').attr('id','this');
+
+		$('.l1').click(function () {
+			if ($('#con1').hasClass("active")) {
+				$('#con1').removeClass("active");
+				$('#list1').removeClass("active");
+				$('#con2').addClass("active");
+				$('#list2').addClass("active");
+			}
+		}); 
+		$('.l2').click(function () {
+			if ($('#con2').hasClass("active")) {
+				$('#con2').removeClass("active");
+				$('#list2').removeClass("active");
+				$('#con1').addClass("active");
+				$('#list1').addClass("active");
+			}
+		}); 
 		
 	</script>
 
