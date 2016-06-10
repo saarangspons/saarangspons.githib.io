@@ -883,7 +883,10 @@
 
 			nav.pagenav .current > a
 			{
-    			color: green;
+    			color: #FF0000;
+    			border-bottom-width: 5px;
+				border-bottom-style: solid;
+				border-bottom-color: #FF0000;
    			}
 
 			#nav li.active a
