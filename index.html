@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Saarang Sponsors Brorchure</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<title>Saarang Sponsors Brochure</title>
 	<meta charset="utf-8">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -13,26 +12,20 @@
 
 	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	  <noscript>
+	  	<link rel="stylesheet" href="css/style.css" />
 	  	<link rel="stylesheet" href="css/style-desktop.css" />
 		<link rel="stylesheet" href="css/skel-noscript.css" />
 	  </noscript>
 	  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
-	  <style>
-	  .carousel-inner > .item > img,
-	  .carousel-inner > .item > a > img {
-	      width: 76%;
-	      margin: auto;
-	  }
-	  </style>
 </head>
 <body style="background-color: black; margin-left: 0%;">
 	<div style="background-color: black; margin-left: 0%;">
 		<div id="header" style="height: 200%; width: 100%; margin-left: 0%; margin-right: 0%; padding-right: 0%; padding-left: 0%;">
 			<div id="nav-wrapper" style="padding-left: 0%; padding-right: 0%; margin-left: 0%; margin-right: 0%;"> 
 				<!-- Nav -->
-				<nav id="nav" class=" nav nav-bar fixed" style="position: fixed; width: 100%; opacity: 0.6; background-color: black; font-weight: bold; z-index: 300; margin-left: 0%; margin-right: 0%; padding-right: 0%; padding-left: 0%;">
+				<nav id="nav" class="nav nav-bar fixed pagenav" style="position: fixed; width: 100%; opacity: 0.6; background-color: black; font-weight: bold; z-index: 300; margin-left: 0%; margin-right: 0%; padding-right: 0%; padding-left: 0%;">
 					<ul style="margin-left: 0%; margin-right: 0%; padding-right: 0%; padding-left: 0%;">
-						<li class="active"><a href="#home">Home</a></li>
+						<li><a href="#home">Home</a></li>
 						<li><a href="#aboutus">About Us</a></li>
 						<li><a href="#proshows">Proshows</a></li>
 						<li><a href="#events">Events</a></li>
@@ -346,7 +339,7 @@
 
 
   			// Hook up the current state to the nav bar
-  			$('#nav').onePageNav();
+  			$('.pagenav').onePageNav();
 
 
 
@@ -355,7 +348,12 @@
 
 		$('.carousel').carousel({
     	interval: false
-		}); 
+		});
+
+		var a=$(".current").html();
+		console.log(a);
+
+		$('.current').attr('id','this');
 		
 	</script>
 

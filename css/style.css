@@ -66,12 +66,11 @@
 	a
 	{
 		text-decoration: none;
-		color: #80BA8E;
 	}
 	
 	a:hover
 	{
-		text-decoration: underline;
+		text-decoration: none;
 	}
 
 	sub
@@ -869,7 +868,7 @@
 				border-right: none;
 			}
 
-			#nav > ul > li > a,
+			nav.pagenav li a,
 			#nav > ul > li > span
 			{
 				display: inline-block;
@@ -881,6 +880,11 @@
 				outline: 0;
 				color: #FFF;
 			}
+
+			nav.pagenav .current > a
+			{
+    			color: green;
+   			}
 
 			#nav li.active a
 			{
