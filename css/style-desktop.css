@@ -14,17 +14,13 @@
 
 	}
 
-	.glyphicon-chevron-left, .glyphicon-chevron-right 
+	.current 
 	{
-		color: white;
-		position: absolute;
+    	color: red;
 	}
 
-	/*.containerspons
-	{
-		padding-top: 40px;
-	}
-	*/
+	
+	
 
 	.section
 	{

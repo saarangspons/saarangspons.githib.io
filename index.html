@@ -8,6 +8,9 @@
 	  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	  <link rel="stylesheet" href="css/style.css" />
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+	  <script type="text/javascript" src="js/jquery.combinedScroll.js"></script>
+
 	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	  <noscript>
 	  	<link rel="stylesheet" href="css/style-desktop.css" />
@@ -340,6 +343,14 @@
 		$(document).ready(function() {
 		    set_img1_height();
 		    $(window).bind('resize', function() { set_img1_height(); });
+
+
+  			// Hook up the current state to the nav bar
+  			$('#nav').onePageNav();
+
+
+
+
 		});
 
 		$('.carousel').carousel({
