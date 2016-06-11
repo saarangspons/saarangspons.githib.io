@@ -14,9 +14,10 @@
 
 	}
 
-	
-
-	
+	span > .counter
+	{
+		font-size: 20%;
+	}	
 	
 
 	.section
