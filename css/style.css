@@ -91,7 +91,9 @@
 	}
 
 	.carousel-inner > .item > img,
-    .carousel-inner > .item > a > img
+    .carousel-inner > .item > a > img,
+    .carousel-inner > .item > iframe,
+    .carousel-inner > .item > a > iframe
     {
     	  width: 70%;
       	margin: auto;
@@ -947,7 +949,7 @@
 				letter-spacing: 0.06em;
 				text-decoration: none;
 				text-transform: uppercase;
-				font-size: 1.1em;
+				font-size: 1.0em;
 				outline: 0;
 				color: #FFF;
 			}

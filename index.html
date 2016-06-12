@@ -29,6 +29,7 @@
 					<ul style="margin-left: 0%; margin-right: 0%; padding-right: 0%; padding-left: 0%;">
 						<li class="l2"><a href="#home">Home</a></li>
 						<li class="l2"><a href="#aboutus">About Us</a></li>
+						<li class="l2"><a href="#teaser">Teaser</a></li>
 						<li class="l2"><a href="#proshows">Proshows</a></li>
 						<li class="l2"><a href="#events">Events</a></li>
 						<li class="l2"><a href="#out_events">Outreach Events</a></li>
@@ -43,32 +44,32 @@
 	</div>
 		<div class="container">
 			<div class="wrapper">
-				<div class="clip-text clip-text_twelve clip-text--cover" style="position: absolute; top: 10%; left: 15%;">SAARANG 2017</div>
+				<div class="clip-text clip-text_twelve clip-text--cover col-xs-8" style="position: absolute; top: 10%; left: 15%;">SAARANG 2017</div>
 				<div class="row">
 				<div class="counting" style="position: absolute; top: 50%; left: 2%;">
-						<div class="col-md-2 counting-grid">
+						<div class="col-xs-2 counting-grid">
 							<img src="images/days.jpg" style="height: 80%; width: 80%;">
 							<h4> <p class="counter"> 5 </p> </h4> 
 							<h3>DAYS</h3>
 							
 						</div>
-						<div class="col-md-3 counting-grid">
+						<div class="col-xs-3 counting-grid">
 							<img src="images/proshows.png" style="height: 50%; width: 50%;">
 							<h4> <p class="counter"> 5 </p> </h4>
 							<h3>PROSHOWS</h3>
 							 
 						</div>
-						<div class="col-md-2 counting-grid">
+						<div class="col-xs-2 counting-grid">
 							<img src="images/events.png" style="height: 76%; width: 76%;"><br>
 							<h4> <span class="counter">50</span> <span>+</span> </h4>
 							<h3>EVENTS</h3>
 						</div>
-						<div class="col-md-3 counting-grid">
+						<div class="col-xs-3 counting-grid">
 							<img src="images/footfall.ico" style="height: 47%; width: 47%;"><br>
 							<h4> <span class="counter">50000</span> <span>+</span> </h4>
 							<h3>FOOTFALL</h3>
 						</div>
-						<div class="col-md-2 counting-grid">
+						<div class="col-xs-2 counting-grid">
 							<img src="images/corporate.png" style="height: 80%; width: 80%;"><br>
 							<h4> <span class="counter">125</span> <span>+</span> </h4>
 							<h3>CORPORATE HOUSES</h3>
@@ -127,6 +128,47 @@
 	      <span class="sr-only">Previous</span>
 	    </a>
 	    <a class="right carousel-control" href="#myCarousel1" role="button" data-slide="next">
+	      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	      <span class="sr-only">Next</span>
+	    </a>
+	  </div>
+	</div>
+	<br>
+	<div class="container" style="background-color: black;" id="teaser">
+	  <br>
+	  <div id="myCarousel7" class="carousel slide"  data-ride="carousel" data-slide-to="0">
+	    <!-- Indicators -->
+	    <ol class="carousel-indicators">
+	      <li data-target="#myCarousel7" data-slide-to="0" class="active"></li>
+	      <li data-target="#myCarousel7" data-slide-to="1"></li>
+	      <li data-target="#myCarousel7" data-slide-to="2"></li>
+	      
+	    </ol>
+
+	    <!-- Wrapper for slides -->
+	    <div class="carousel-inner" role="listbox">
+	      <div class="item active" style="margin-left: 20%">
+	        <iframe height="600" src="https://www.youtube.com/embed/yueqmFOHO1c" frameborder="0" id="vid1" allowfullscreen></iframe>
+
+
+	      </div>
+
+	      <div class="item" style="margin-left: 20%">
+	        <iframe height="600" src="https://www.youtube.com/embed/EVkdPvRQ31I" frameborder="0" id="vid2" allowfullscreen></iframe>
+	      </div>
+
+	      <div class="item" style="margin-left: 20%;">
+	        <iframe height="600" src="https://www.youtube.com/embed/WbXVS5JoBtA" frameborder="0" id="vid3" allowfullscreen></iframe>
+	      </div>
+	    
+	    </div>
+
+	    <!-- Left and right controls -->
+	    <a class="left carousel-control" href="#myCarousel7" role="button" data-slide="prev">
+	      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	      <span class="sr-only">Previous</span>
+	    </a>
+	    <a class="right carousel-control" href="#myCarousel7" role="button" data-slide="next">
 	      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
 	      <span class="sr-only">Next</span>
 	    </a>
@@ -385,6 +427,9 @@
 		    $('#img1').attr('style', 'width: 100%;');
 		    $('#img1').attr('style', 'height:' + wh + 'px;');
 		    $('#header').attr('style', 'height:' + wh + 'px;');
+		    $('#vid1').attr('style', 'height: 0.9*' + wh + 'px;');
+		    $('#vid2').attr('style', 'height: 0.9*' + wh + 'px;');
+		    $('#vid3').attr('style', 'height: 0.9*' + wh + 'px;');
 		    
 		}
 		$(document).ready(function() {
