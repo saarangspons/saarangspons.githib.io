@@ -10,7 +10,23 @@
 
 	body
 	{
+		background-image: url("images/header.jpg");
+
 	}
+
+	span > .counter
+	{
+		font-size: 20%;
+	}	
+	
+
+	.section
+	{
+		display: block;
+    	position: relative;
+    	top: -80px;
+    	visibility: hidden;
+	 }
 
 	body,input,textarea,select
 	{
@@ -71,16 +87,16 @@
 	
 	#footer
 	{
-		padding: 3em 0em;
+		padding: 6em 0em;
 	}
 	
 /*********************************************************************************/
 /* Featured                                                                      */
 /*********************************************************************************/
-	
-	#featured
+	.sponsimages
 	{
-		padding: 6em 0em;
+		padding: 1em 0em 0.5em;
+		background-color: red;
 	}
 	
 	#featured h3
@@ -106,13 +122,13 @@
 	
 	#tweet
 	{
-		padding: 2em 0em;
+		padding: 6em 0em;
 	}
 
 	#tweet blockquote
 	{
 		margin: 0;
-		/*padding: 1em 4em;*/
+		padding: 1em 4em;
 		line-height: 1.5em;
 		font-size: 1.8em;
 	}	
