@@ -3,10 +3,10 @@
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Methods - fullPage.js</title>
+	<title>Sponsors Brochure</title>
 	<!-- <meta name="description" content="fullPage methods demo." /> -->
 	<!-- <meta name="keywords"  content="fullpage,jquery,methods,callbacks,demo" /> -->
-	<meta name="Resource-type" content="Document" />
+	<!-- <meta name="Resource-type" content="Document" /> -->
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
@@ -15,15 +15,6 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/skel.min.js"></script>
-	<script src="js/skel-panels.min.js"></script>
-	<script src="js/init.js"></script>
-	<noscript>
-		<link rel="stylesheet" href="css/skel-noscript.css" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/style-desktop.css" />
-	</noscript>
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -34,13 +25,16 @@
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
 	<script src="js/examples.js"></script>
+	<script src="js/skel.min.js"></script>
+	<script src="js/skel-panels.min.js"></script>
+	<script src="js/init.js"></script>
 	<script>
 	 $(document).ready(function() {
 
 			function initialization(){
 				$('#myContainer').fullpage({
-					sectionsColor: ['#4A6FB1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff','#ccddff'],
-					anchors: ['1stpage', '2ndpage', '3rdpage', '4thpage','5thpage', 'lastpage'],
+					sectionsColor: ['#4A6FB1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff','#ccddff','#7BAABE', 'whitesmoke', '#ccddff'],
+					anchors: ['1stpage', '2ndpage', '3rdpage', '4thpage','5thpage','6thpage','7thpage','8thpage','9thpage'],
 					resize: false,
 					animateAnchor:false,
 					scrollOverflow: true,
@@ -91,6 +85,9 @@
 		.fp-controlArrow.fp-next{
 			right: 50px;
 		}
+		.section{
+			padding-top:5em;
+		}
 		#section0{
 			background-image: url('images/background.png');
 		}
@@ -109,121 +106,142 @@
 	   		object-fit: cover; /*cover video background */
 	   		z-index:3;
 		}
-
 	</style>
-
 </head>
 <body>
 
-<ul id="menu">
-	<li data-menuanchor="1stpage"><a href="#1stpage">Home</a></li>
-	<li data-menuanchor="2ndpage"><a href="#2ndpage">About</a></li>
-	<li data-menuanchor="3rdpage"><a href="#3rdpage">Proshows</a></li>
-	<li data-menuanchor="4thpage"><a href="#4thpage">Events</a></li>
-	<li data-menuanchor="5thpage"><a href="#5thpage">Outreach Events</a></li>
-	<li data-menuanchor="6thpage"><a href="#6thpage">Reviews</a></li>
-	<li data-menuanchor="7thpage"><a href="#7thpage">Contact Us</a></li>
-	<li data-menuanchor="8thpage"><a href="#8thpage">Previous Partners</a></li>
-	<li data-menuanchor="9thpage"><a href="#9thpage">Media Coverage</a></li>
+	<ul id="menu" style="text-align:center">
+		<li data-menuanchor="1stpage"><a href="#1stpage">Home</a></li>
+		<li data-menuanchor="2ndpage"><a href="#2ndpage">About Us</a></li>
+		<li data-menuanchor="3rdpage"><a href="#3rdpage">Proshows</a></li>
+		<li data-menuanchor="4thpage"><a href="#4thpage">Events</a></li>
+		<li data-menuanchor="5thpage"><a href="#5thpage">Outreach Events</a></li>
+		<li data-menuanchor="6thpage"><a href="#6thpage">Previous Partners</a></li>
+		<li data-menuanchor="7thpage"><a href="#7thpage">Media Coverage</a></li>
+		<li data-menuanchor="8thpage"><a href="#8thpage">Reviews</a></li>
+		<li data-menuanchor="9thpage"><a href="#9thpage">Contact Us</a></li>
+	</ul>
 
-</ul>
-<div id="myContainer">
+	<div id="myContainer">
+		<div class="section" id="section0">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<img src="images/saarang.png">
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<span style="color:white;font-size:1.5em">Saarang is the annual cultural festival of Indian Institute of Technology, Madras. Accredited with heritage stretching from the late 70s, Saarang has grown to be the largest student-run college festival in the country, with ISO 9001:2008 certification. With a footfall of over 50,00 and attracting demographic diversity that very few can boast of, Saarang remains an unrivaled platform for showcasing the  enthusiasm and creativity of the youth.</span>
+				</div>
+			</div>
+			
+		</div>
 
-	<div class="section" id="section0">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2w">
-				<img src="images/saarang.png">
+		<!-- About Us-->
+		<div class="section" id="section1">
+			<div class="container">
+				<h1>About Us</h1>
 			</div>
 		</div>
-		<span style="color:white;font-size:1.5em;font-family:FontAwesome">Saarang is the annual cultural festival of Indian Institute of Technology, Madras. Accredited with heritage stretching from the late 70s, Saarang has grown to be the largest student-run college festival in the country, with ISO 9001:2008 certification. With a footfall of over 50,00 and attracting demographic diversity that very few can boast of, Saarang remains an unrivaled platform for showcasing the  enthusiasm and creativity of the youth.</span>
-	</div>
-	<div class="section" id="section1">
-		<div class="container">
+		
+		<div class="section" id="section2">
+			<div class="slide">
+			<h1>section3</h1>
+				<!-- <video loop id="myVideo">
+					<source src="images/flowers.mp4" type="video/mp4">
+					<source src="iamges/flowers.webm" type="video/webm">
+				</video> -->
+			</div>
+			<div class="slide"><div class="wrap"><h1>Slide 2.1</h1></div></div>
+			<div class="slide"><h1>Slide 2.2</h1></div>
+			<div class="slide"><h1>Slide 2.3</h1></div>
+		</div>
+		<div class="section" id="section3">
+
 
 		</div>
-	</div>
-	<div class="section" id="section2">
-		<div class="slide">
-		<h1>section3</h1>
-			<!-- <video loop id="myVideo">
-				<source src="images/flowers.mp4" type="video/mp4">
-				<source src="iamges/flowers.webm" type="video/webm">
-			</video> -->
+		<div class="section" id="section4">
+
 		</div>
-		<div class="slide"><div class="wrap"><h1>Slide 2.1</h1></div></div>
-		<div class="slide"><h1>Slide 2.2</h1></div>
-		<div class="slide"><h1>Slide 2.3</h1></div>
-	</div>
-	<div class="section" id="section3">
-		<div id="tweet">
-			<div class="container">
-				<div class="row" style="margin:0px">
-					<div class="col-md-12" style="padding:0px">
-		                <!-- <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div> -->
-						<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
-						  <!-- Carousel indicators -->
-		                  <ol class="carousel-indicators">
-						    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
-						    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-						    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
-		                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
-		                    <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
-		                    <li data-target="#fade-quote-carousel" data-slide-to="5"></li>
-						  </ol>
-						  <!-- Carousel items -->
-						  <div class="carousel-inner">
-						    <div class="active item">
-		                        <div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
-						    	<blockquote>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-						    		<h4>Kamal</h4>
-						    	</blockquote>	
-						    </div>
-						    <div class="item">
-		                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
-						    	<blockquote>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-						    		<h4>Kamal</h4>
-						    	</blockquote>
-						    </div>
-						    <div class="item">
-		                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
-						    	<blockquote>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-						    		<h4>Kamal</h4>
-						    	</blockquote>
-						    </div>
-		                    <div class="item">
-		                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
-		    			    	<blockquote>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-						    		<h4>Kamal</h4>
-						    	</blockquote>
-						    </div>
-		                    <div class="item">
-		                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
-		    			    	<blockquote>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-						    		<h4>Kamal</h4>
-						    	</blockquote>
-						    </div>
-		                    <div class="item">
-		                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
-		    			    	<blockquote>
-						    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-						    		<h4>Kamal</h4>
-						    	</blockquote>
-						    </div>
-						  </div>
-						</div>
-					</div>							
+		<div class="section" id="section5">
+
+		</div>
+		<div class="section" id="section6">
+
+		</div>
+
+		<!-- Reviews -->
+		<div class="section" id="section7">
+			<div id="tweet">
+				<div class="container">
+					<div class="row" style="margin:0px">
+						<div class="col-md-12" style="padding:0px">
+			                <!-- <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div> -->
+							<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
+							  <!-- Carousel indicators -->
+			                  <ol class="carousel-indicators">
+							    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+							    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+							    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
+			                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+			                    <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+			                    <li data-target="#fade-quote-carousel" data-slide-to="5"></li>
+							  </ol>
+							  <!-- Carousel items -->
+							  <div class="carousel-inner">
+							    <div class="active item">
+			                        <div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+							    	<blockquote>
+							    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+							    		<h4>Kamal</h4>
+							    	</blockquote>	
+							    </div>
+							    <div class="item">
+			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+							    	<blockquote>
+							    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+							    		<h4>Kamal</h4>
+							    	</blockquote>
+							    </div>
+							    <div class="item">
+			                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
+							    	<blockquote>
+							    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+							    		<h4>Kamal</h4>
+							    	</blockquote>
+							    </div>
+			                    <div class="item">
+			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+			    			    	<blockquote>
+							    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+							    		<h4>Kamal</h4>
+							    	</blockquote>
+							    </div>
+			                    <div class="item">
+			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+			    			    	<blockquote>
+							    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+							    		<h4>Kamal</h4>
+							    	</blockquote>
+							    </div>
+			                    <div class="item">
+			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+			    			    	<blockquote>
+							    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
+							    		<h4>Kamal</h4>
+							    	</blockquote>
+							    </div>
+							  </div>
+							</div>
+						</div>							
+					</div>
 				</div>
 			</div>
 		</div>
 
-	</div>
-	<div class="section" id="section4">
-		<!-- Footer -->
+		<!-- Contact -->
+		<div class="section" id="section8">
+
 			<div id="footer">
 				<div class="container">
 					<section>
@@ -242,7 +260,6 @@
 				</div>
 			</div>
 
-		<!-- Copyright -->
 			<div id="copyright">
 				<div class="container">
 					<div class="row"> 
@@ -275,8 +292,8 @@
 					</div>
 				</div>
 			</div>
+		</div>
 	</div>
-</div>
 
 </body>
 </html>
