@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
 	<link rel="stylesheet" type="text/css" href="css/carousel.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
 	<!--[if IE]>
 		<script type="text/javascript">
 			 var console = { log: function() {} };
@@ -25,13 +26,23 @@
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
 	<script src="js/examples.js"></script>
+	<script src="js/waypoints.min.js"></script> 
+	<script src="js/counterup.min.js"></script> 
+	<script>
+		jQuery(document).ready(function( $ ) {
+			$('.counter').counterUp({
+				delay:30,
+				time:2000
+			});
+		});
+	</script>
 	<script>
 	 $(document).ready(function() {
 
 			function initialization(){
 				$('#myContainer').fullpage({
-					sectionsColor: ['#4A6FB1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff','#ccddff','#7BAABE', 'whitesmoke', '#ccddff'],
-					anchors: ['home', 'about', 'proshows', 'events','outreach','previous_partners','media','reviews','contact','lastpage'],
+					sectionsColor: ['#4A6FB1', '#4BBFC3','#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff','#ccddff','#7BAABE', 'whitesmoke', '#ccddff'],
+					anchors: ['home', 'about', 'video', 'proshows', 'events','outreach','previous_partners','media','reviews','contact'],
 					resize: false,
 					animateAnchor:false,
 					scrollOverflow: true,
@@ -41,17 +52,11 @@
 					menu: '#menu',
 					navigation:true,
 					continuousVertical:true,
-					// paddingTop: '20px',
 					css3: true,
 					onLeave: function(index, nextIndex, direction){
 						console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
 					},
 					afterLoad: function(anchorLink, index){
-						// if (index == 2) {
-						// 	$('video').get(0).play();
-						// }else{
-						// 	$('video').get(0).pause();
-						// }
 						console.log("afterLoad--" + "anchorLink: " + anchorLink + " index: " + index );
 					},
 					afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){
@@ -86,7 +91,7 @@
 			background-image: url('images/background.png');
 		}
 		.section{
-			padding:4em 0 0em 0;
+			padding:0em 0 0em 0;
 		}
 		#myVideo{
 			position: absolute;
@@ -110,6 +115,7 @@
 	<ul id="menu" style="text-align:center">
 		<li data-menuanchor="home"><a href="#home">Home</a></li>
 		<li data-menuanchor="about"><a href="#about">About Us</a></li>
+		<li data-menuanchor="video"><a href="#video">Videos</a></li>
 		<li data-menuanchor="proshows"><a href="#proshows">Proshows</a></li>
 		<li data-menuanchor="events"><a href="#events">Events</a></li>
 		<li data-menuanchor="outreach"><a href="#outreach">Outreach Events</a></li>
@@ -131,24 +137,74 @@
 					<span style="color:white;font-size:1.5em">Saarang is the annual cultural festival of Indian Institute of Technology, Madras. Accredited with heritage stretching from the late 70s, Saarang has grown to be the largest student-run college festival in the country, with ISO 9001:2008 certification. With a footfall of over 50,00 and attracting demographic diversity that very few can boast of, Saarang remains an unrivaled platform for showcasing the  enthusiasm and creativity of the youth.</span>
 				</div>
 			</div>
+			<img style="position:absolute;bottom:2em;left:5px" src="images/iso_logo_1.png">
+			<img style="position:absolute;bottom:2em;right:0" src="images/iitm_logo.png">
 		</div>
 
 		<!-- About Us-->
 		<div class="section" id="section1" style="background-color:">
-			<div class="container">
-				<div class="row center">
-					<h1>About Us</h1>
-				</div>
-				<div class="row">
-					<div class="col-md-12">
-						
+			<div class="slide">
+				<div class="container">
+					<div class="row center">
+						<h1>About Us</h1>
 					</div>
-				</div>	
+					<div class="row">
+						<div class="col-md-12">
+							Content
+						</div>
+					</div>	
+				</div>
+			</div>
+			<div class="slide">
+				<div class="conatiner">
+					<div class="row">
+						<div class="counting">
+								<div class="col-md-2 counting-grid">
+									<p class="counter">5</p> 
+									<h1>Days</h1>
+								</div>
+								<div class="col-md-3 counting-grid">
+									<p class="counter">5</p>
+									<h1>Proshows</h1>
+								</div>
+								<div class="col-md-2 counting-grid">
+									<p><span class="counter">50</span> <span>+</span></p>
+									<h1>Events</h1>
+								</div>
+								<div class="col-md-3 counting-grid">
+									<p><span class="counter">50000</span> <span>+</span></p>
+									<h1>Footfall</h1>
+								</div>
+								<div class="col-xs-2 counting-grid">
+									<p><span class="counter">125</span> <span>+</span></p>
+									<h1>Corporate Houses</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 
-
+		<!-- Videos -->
 		<div class="section" id="section2">
+			<div class="slide">
+				<iframe width="100%" heigth="100%" src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1"></iframe>
+				<!-- <video id="myVideo">
+					<source src="imgs/flowers.mp4" type="video/mp4">
+					<source src="imgs/flowers.webm" type="video/webm">
+				</video> -->
+			</div>
+			<div class="slide">
+				<iframe width="100%" heigth="100%" src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1"></iframe>
+			</div>
+			<div class="slide">
+				<iframe width="100%" heigth="100%" src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1"></iframe>
+			</div>
+		</div>
+
+		<!-- Proshows -->
+		<div class="section" id="section3">
 			<div class="slide" style="background:url('images/proshows.png') center no-repeat;background-size: contain">
 			</div>
 			<div class="slide" style="background:url('images/classical.png') center no-repeat;background-size: contain">
@@ -162,31 +218,46 @@
 			<div class="slide" style="background:url('images/popular.png') center no-repeat;background-size: contain">
 			</div>
 		</div>
-	
-		<div class="section" id="section3">
-			<div class="slide">
-			<h1>section3</h1>
-				<!-- <video loop id="myVideo">
-					<source src="images/flowers.mp4" type="video/mp4">
-					<source src="iamges/flowers.webm" type="video/webm">
-				</video> -->
-			</div>
-			<div class="slide"><div class="wrap"><h1>Slide 2.1</h1></div></div>
-			<div class="slide"><h1>Slide 2.2</h1></div>
-			<div class="slide"><h1>Slide 2.3</h1></div>
 
-
-		</div>
+		<!-- Events -->
 		<div class="section" id="section4">
-
+			<div class="slide" style="background:url('images/events.png') center no-repeat;background-size: contain">
+			</div>
+			<div class="slide" style="background:url('images/spot.png') center no-repeat;background-size: contain">
+			</div>
+			<div class="slide" style="background:url('images/spot1.png') center no-repeat;background-size: contain">
+			</div>
+			<div class="slide" style="background:url('images/lec.png') center no-repeat;background-size: contain">
+			</div>
+			<div class="slide" style="background:url('images/dance.png') center no-repeat;background-size: contain">
+			</div>
+			<div class="slide" style="background:url('images/design.png') center no-repeat;background-size: contain">
+			</div>
+			<div class="slide" style="background:url('images/thespian.png') center no-repeat;background-size: contain">
+			</div>
+			<div class="slide" style="background:url('images/quiz.png') center no-repeat;background-size: contain">
+			</div>
+			<div class="slide" style="background:url('images/road.png') center no-repeat;background-size: contain">
+			</div>
 		</div>
+		
+		<!-- Outreach -->
 		<div class="section" id="section5">
+			<div class="slide" style="background:url('images/pre.png') center no-repeat;background-size: contain">
+			</div>
+			<div class="slide" style="background:url('images/social.png') center no-repeat;background-size: contain">
+			</div>
+			<div class="slide" style="background:url('images/milan.png') center no-repeat;background-size: contain">
+			</div>
+		</div>
+		<!-- Previous partners -->
+		<div class="section" id="section6">
 			<div class="slide" style="background:url('images/pp1.png') center no-repeat;background-size: contain">
 			</div>
 			<div class="slide" style="background:url('images/pp2.png') center no-repeat;background-size: contain">
 			</div>
 		</div>
-		<div class="section" id="section6">
+		<div class="section" id="section7">
 			<div class="slide" style="background:url('images/media1.png') center no-repeat;background-size: contain">
 			</div>
 			<div class="slide" style="background:url('images/media2.png') center no-repeat;background-size: contain">
@@ -194,7 +265,7 @@
 		</div>
 
 		<!-- Reviews -->
-		<div class="section" id="section7">
+		<div class="section" id="section8">
 			<div id="tweet">
 				<div class="container">
 					<div class="row" style="margin:0px">
@@ -263,7 +334,7 @@
 		</div>
 
 		<!-- Contact -->
-		<div class="section" id="section8">
+		<div class="section" id="section9">
 
 			<div id="footer">
 				<div class="container">
@@ -272,7 +343,7 @@
 							<h2>Find us at</h2>
 							<!-- <span class="byline">Integer sit amet pede vel arcu aliquet pretium</span> -->
 						</header>
-						<h1><a target="_blank" href="http://www.saarang.org/2016/main/">saarang.org</a></h1>
+						<h1><a target="_blank" href="http://www.saarang.org/2016/main/">www.saarang.org</a></h1>
 						<ul class="contact">
 							<li class="active"><a target="_blank" href="https://www.facebook.com/saarangiitm" class="fa fa-facebook"><span>Facebook</span></a></li>
 							<li><a target="_blank" href="https://www.youtube.com/user/iitmsaarang" class="fa fa-youtube"><span>YouTube</span></a></li>
@@ -319,4 +390,4 @@
 	</div>
 
 </body>
-</html>
+</html>	
