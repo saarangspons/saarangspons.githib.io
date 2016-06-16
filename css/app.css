@@ -453,7 +453,7 @@
 	
 	ul.contact li a
 	{
-		color: inherit;
+		color: #777;
 		font-size: 1.75em;
 		display: inline-block;
 		-moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
@@ -467,3 +467,24 @@
 	{
 		color: #fff;
 	}
+
+/*******************************************************
+Custom CSS
+*******************************************************/
+a,
+a:link,
+a:visited
+{
+	color: #777;
+	text-decoration:none;
+}
+a:hover
+{
+	color: #fff;
+	text-decoration:none;
+	-moz-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+	-webkit-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+	-o-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+	-ms-transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+	transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
+}
