@@ -4,13 +4,12 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Sponsors Brochure</title>
-	<!-- <meta name="description" content="fullPage methods demo." /> -->
 	<!-- <meta name="keywords"  content="fullpage,jquery,methods,callbacks,demo" /> -->
-	<!-- <meta name="Resource-type" content="Document" /> -->
 
 	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300italic,300' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,700,500,900' rel='stylesheet' type='text/css'>
 
+	<script src="https://use.fontawesome.com/7f37e5235d.js"></script>
 	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 	<link rel="stylesheet" type="text/css" href="css/examples.css" />
@@ -26,23 +25,13 @@
 	<script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="js/jquery.fullPage.js"></script>
 	<script src="js/examples.js"></script>
-	<!-- <script src="js/waypoints.min.js"></script>  -->
-	<!-- <script src="js/counterup.min.js"></script>  -->
-	<!-- <script>
-		jQuery(document).ready(function( $ ) {
-			$('.counter').counterUp({
-				delay:30,
-				time:2000
-			});
-		});
-	</script> -->
 	<script>
 	 $(document).ready(function() {
 
 			function initialization(){
 				$('#myContainer').fullpage({
 					sectionsColor: ['#161616', '#161616','#161616', '#161616', '#161616', '#161616','#161616','#161616', '#161616', '#161616'],
-					anchors: ['home', 'about','video','proshows', 'events','outreach','previous_partners','media','reviews','contact','lastpage'],
+					anchors: ['home', 'about','proshows', 'events','outreach','previous_partners','media','reviews','contact','lastpage'],
 					resize: false,
 					animateAnchor:false,
 					scrollOverflow: true,
@@ -91,7 +80,7 @@
 			background-image: url('images/background.png');
 		}
 		.section{
-			padding:0em 0 0em 0;
+			padding:1.75em 0 0 0;
 		}
 		#myVideo{
 			position: absolute;
@@ -116,7 +105,6 @@
 		<ul id="menu" style="text-align:center;font-family: 'Roboto', sans-serif;">
 			<li data-menuanchor="home"><a href="#home"><i>Home</i></a></li>
 			<li data-menuanchor="about"><a href="#about"><i>About Us</i></a></li>
-			<li data-menuanchor="video"><a href="#video"><i>Videos</i></a></li>
 			<li data-menuanchor="proshows"><a href="#proshows"><i>Proshows</i></a></li>
 			<li data-menuanchor="events"><a href="#events"><i>Events</i></a></li>
 			<li data-menuanchor="outreach"><a href="#outreach"><i>Outreach Events</i></a></li>
@@ -127,31 +115,66 @@
 		</ul>
 	</div>
 
-	<img style="position:fixed;bottom:0em;left:5px;z-index:11" class="img-responsive" src="images/saarang_logo.png">
-	<img style="position:fixed;bottom:0em;right:0;z-index:11" class="img-responsive" src="images/iitm_logo_white.png">
-	<img style="position:fixed;top:0em;right:5px;z-index:11" class="img-responsive" src="images/iso_logo_1.png">
+	<img style="position:fixed;bottom:0em;right:0;z-index:11" class="img-responsive logo" src="images/iitm_logo_white.png">
+	<img style="position:fixed;bottom:0em;left:5px;z-index:11" class="img-responsive logo" src="images/iso_logo_1.png">
 
 	<div id="myContainer">
 		<div class="section" id="section0">
-			<div class="row">
+			<div class="row" style="padding-top:2em">
 				<div class="col-md-8 col-md-offset-2">
 					<img src="images/saarang.png">
 				</div>
 			</div>
-			<div class="row" style="margin-top:2em">
+			<div class="row" style="color:white;font-family:'Roboto', sans-serif;">
+				<div class="col-md-2 col-md-offset-1">
+					<div class="row profile-circle">
+						<div class="icon fa fa-calendar fa-3x"></div>
+					</div>
+					<h2><i>5</i></h2>
+					<h4><i>DAYS</i></h4>	
+				</div>
+				<div class="col-md-2">
+					<div class="row profile-circle">
+						<div class="icon fa fa-heartbeat fa-3x"></div>
+					</div>
+					<h2><i>5</i></h2>
+					<h4><i>PROSHOWS</i></h4>	
+				</div>
+				<div class="col-md-2">
+					<div class="row profile-circle">
+						<div class="icon fa fa-gift fa-3x"></div>
+					</div>
+					<h2><i>50+</i></h2>
+					<h4><i>EVENTS</i></h4>	
+				</div>
+				<div class="col-md-2">
+					<div class="row profile-circle">
+					<div class="icon fa fa-users fa-3x"></div>
+					</div>
+					<h2><i>50000+</i></h2>
+					<h4><i>FOOTFALL</i></h4>	
+				</div>
+				<div class="col-md-2">
+					<div class="row profile-circle">
+						<div class="icon fa fa-briefcase fa-3x"></div>
+					</div>
+					<h2><i>125+</i></h2>
+					<h4><i>CORPORATE HOUSES</i></h4>	
+				</div>
+			</div>
+
+			<!-- <div class="row" style="margin-top:2em">
 				<div class="col-md-10 col-md-offset-1">
 					<i>
 						<span style="color:white;font-size:1.5em;font-family: 'Roboto', sans-serif;">Saarang is the annual cultural festival of Indian Institute of Technology, Madras. Accredited with heritage stretching from the late 70s, Saarang has grown to be the largest student-run college festival in the country, with ISO 9001:2008 certification. With a footfall of over 50,00 and attracting demographic diversity that very few can boast of, Saarang remains an unrivaled platform for showcasing the  enthusiasm and creativity of the youth.</span>
 					</i>
 				</div>
-			</div>
+			</div> -->
 		</div>
 
 		<!-- About Us-->
 		<div class="section" id="section1" style="background-color:">
-			<div class="slide" style="background:url('images/about.png') center no-repeat;background-size: contain">
-			</div>
-			<!-- <div class="slide">
+			<div class="slide">
 				<div class="container" style="background-color:#392F2E;color:white">
 					<div class="row center">
 						<h1>About Us</h1>
@@ -162,116 +185,103 @@
 						</div>
 					</div>	
 				</div>
-			</div> -->
-			<div class="slide">
-				<!-- <div class="conatiner">
-					<div class="row">
-						<div class="counting">
-								<div class="col-md-2 counting-grid">
-									<p class="counter">5</p> 
-									<h1>Days</h1>
-								</div>
-								<div class="col-md-3 counting-grid">
-									<p class="counter">5</p>
-									<h1>Proshows</h1>
-								</div>
-								<div class="col-md-2 counting-grid">
-									<p><span class="counter">50</span> <span>+</span></p>
-									<h1>Events</h1>
-								</div>
-								<div class="col-md-3 counting-grid">
-									<p><span class="counter">50000</span> <span>+</span></p>
-									<h1>Footfall</h1>
-								</div>
-								<div class="col-xs-2 counting-grid">
-									<p><span class="counter">125</span> <span>+</span></p>
-									<h1>Corporate Houses</h1>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div> -->
 			</div>
-		</div>
+			<div class="slide">
 
-		<!-- Videos -->
-		<div class="section" id="section2">
-			<h1>videos</h1>
+			</div>
 		</div>
 
 		<!-- Proshows -->
-		<div class="section" id="section3">
-			<div class="slide" style="background:url('images/proshows.png') center no-repeat;background-size: contain">
+		<div class="section" id="section2">
+			<div class="slide">
+				<img src="images/proshows.png">
 			</div>
-			<div class="slide" style="background:url('images/classical.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/classical.png">
 			</div>
-			<div class="slide" style="background:url('images/edm.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/edm.png">
 			</div>
-			<div class="slide" style="background:url('images/rock.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/rock.png">
 			</div>
-			<div class="slide" style="background:url('images/choreo.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/choreo.png">
 			</div>
-			<div class="slide" style="background:url('images/popular.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/popular.png">
 			</div>
 		</div>
 
 		<!-- Events -->
-		<div class="section" id="section4">
-			<div class="slide" style="background:url('images/events.png') center no-repeat;background-size: contain">
+		<div class="section" id="section3">
+			<div class="slide">
+				<img src="images/events.png">
 			</div>
-			<div class="slide" style="background:url('images/spot.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/spot.png">
 			</div>
-			<div class="slide" style="background:url('images/spot1.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/spot1.png">
 			</div>
-			<div class="slide" style="background:url('images/lec.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/lec.png">
 			</div>
-			<div class="slide" style="background:url('images/dance.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/dance.png">
 			</div>
-			<div class="slide" style="background:url('images/design.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/design.png">
 			</div>
-			<div class="slide" style="background:url('images/thespian.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/thespian.png">
 			</div>
-			<div class="slide" style="background:url('images/quiz.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/quiz.png">
 			</div>
-			<div class="slide" style="background:url('images/road.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/road.png">
 			</div>
-		</div>
 		
 		<!-- Outreach -->
-		<div class="section" id="section5">
-			<div class="slide" style="background:url('images/pre.png') center no-repeat;background-size: contain">
+		<div class="section" id="section4">
+			<div class="slide">
+				<img src="images/pre.png">
 			</div>
-			<div class="slide" style="background:url('images/social.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/social.png">
 			</div>
-			<div class="slide" style="background:url('images/milan.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/milan.png">
 			</div>
-		</div>
 		<!-- Previous partners -->
+		<div class="section" id="section5">
+			<div class="slide">
+				<img src="images/pp1.png">
+			</div>
+			<div class="slide">
+				<img src="images/pp2.png">
+			</div>
 		<div class="section" id="section6">
-			<div class="slide" style="background:url('images/pp1.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/media1.png">
 			</div>
-			<div class="slide" style="background:url('images/pp2.png') center no-repeat;background-size: contain">
+			<div class="slide">
+				<img src="images/media2.png">
 			</div>
-		</div>
-		<div class="section" id="section7">
-			<div class="slide" style="background:url('images/media1.png') center no-repeat;background-size: contain">
-			</div>
-			<div class="slide" style="background:url('images/media2.png') center no-repeat;background-size: contain">
-			</div>
-		</div>
 
 		<!-- Reviews -->
-		<div class="section" id="section8">
+		<div class="section" id="section7">
 			<div class="slide">
-
+				<img src="images/review.png">
 			</div>
-			<div class="slide">
+			<div>
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
 							<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3500">
 							  <!-- Carousel indicators -->
-			                  <ol class="carousel-indicators">
+			                  <ol class="carousel-indicators" style="padding-bottom:2em">
 							    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
 							    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
 							    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
@@ -282,7 +292,6 @@
 							  <!-- Carousel items -->
 							  <div class="carousel-inner">
 							    <div class="active item">
-			                        <div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
 							    	<i>
 								    	<blockquote>
 								    		<p>I don't know your names like you know mine, you're all a single face to me, the face of IIT, and I salute you</p>
@@ -291,7 +300,6 @@
 							    	</i>	
 							    </div>
 							    <div class="item">
-			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
 							    	<i>
 								    	<blockquote>
 								    		<p>I'm totally speechless about how I felt performing at IIT SAARANG last night. All I can say is you guys were CRAZY!!AND YOU DROVE ME MAAAAD!! UNFORGETTABLE NIGHT!!</p>
@@ -300,7 +308,6 @@
 							    	</i>
 							    </div>
 							    <div class="item">
-			                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
 							    	<i>
 								    	<blockquote>
 								    		<p>Thank u chennai for making it so very special for us. Every moment of the show was magic. Because of u.Thank u so much!!! Love</p>
@@ -309,7 +316,6 @@
 							    	</i>
 							    </div>
 			                    <div class="item">
-			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
 			    			    	<i>
 								    	<blockquote>
 								    		<p>Thanx a lot IIT for the terrific response for last nite's show. U guys doubled my energy..!!!! <br> Keep Rockin IIT!!!</p>
@@ -318,7 +324,6 @@
 							    	</i>
 							    </div>
 			                    <div class="item">
-			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
 			    			    	<i>
 								    	<blockquote>
 								    		<p>The crowd was just fantastic! So loud and respectful. It was overwhelming! Thank you so much for your hospitality</p>
@@ -327,7 +332,6 @@
 							    	</i>
 							    </div>
 			                    <div class="item">
-			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
 			    			    	<i>
 								    	<blockquote>
 								    		<p>India tour was amazing !! Love India !! Love Saarang !!</p>
@@ -336,7 +340,6 @@
 							    	</i>
 							    </div>
 							    <div class="item">
-			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
 			    			    	<i>
 								    	<blockquote>
 								    		<p>It was a great experience to share our thoughts on Indian Music @ IIT Saarang. A lot of interesting questions were asked and we enjoyed every bit</p>
@@ -353,7 +356,7 @@
 		</div>
 
 		<!-- Contact -->
-		<div class="section" id="section9">
+		<div class="section" id="section8">
 
 			<div id="footer">
 				<div class="container">
@@ -361,7 +364,7 @@
 						<header>
 							<h1 style="color:white;font-size:5em">Find us at</h1>
 						</header>
-						<h1><a target="_blank" href="http://www.saarang.org/2016/main/">www.saarang.org</a></h1>
+						<h1><a target="_blank" href="http://www.saarang.org/2016/main/" style="color:#777;font-family:'Roboto', sans-serif;font-weight:600"><i>www.saarang.org</i></a></h1>
 						<ul class="contact">
 							<li class="active"><a target="_blank" href="https://www.facebook.com/saarangiitm" class="fa fa-facebook"><span>Facebook</span></a></li>
 							<li><a target="_blank" href="https://www.youtube.com/user/iitmsaarang" class="fa fa-youtube"><span>YouTube</span></a></li>
@@ -374,20 +377,20 @@
 
 			<div id="copyright">
 				<div class="container">
-					<div class="row" style="color:#777"> 
+					<div class="row" style="color:#777;font-family:'Roboto', sans-serif;font-weight:600"> 
 						<div class="col-md-offset-1 col-md-5">
 							<div class="row">
 								<img src="images/rajat.png">
 							</div>
 							<div class="row">
-								RAJAT SHRINGI
+								<i>RAJAT SHRINGI</i>
 							</div>
 							<div class="row">
 								+919003112313
 							</div>
 							<a href="mailto:rajat.shringi@saarang.org">
 								<div class="row">
-									rajat.shringi@saarang.org
+									<i>rajat.shringi@saarang.org</i>
 								</div>
 							</a>
 						</div>
@@ -396,14 +399,14 @@
 								<img src="images/priy.png">
 							</div>
 							<div class="row">
-								PRIY RANJAN
+								<i>PRIY RANJAN</i>
 							</div>
 							<div class="row">
 								+919043243399
 							</div>
 							<a href="mailto:priy.ranjan@saarang.org">
 								<div class="row">
-									priy.ranjan@saarang.org
+									<i>priy.ranjan@saarang.org</i>
 								</div>
 							</a>
 						</div>
