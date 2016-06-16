@@ -73,6 +73,8 @@ html.fp-enabled,
     height: 0;
     border-style: solid;
     margin-top: -38px;
+    border-radius:50%;
+    opacity:0.5;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
@@ -168,7 +170,7 @@ html.fp-enabled,
     height: 4px;
     width: 4px;
     border: 0;
-    background: #333;
+    background: #fff;
     left: 50%;
     top: 50%;
     margin: -2px 0 0 -2px;

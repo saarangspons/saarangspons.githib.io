@@ -112,18 +112,24 @@
 </head>
 <body>
 
-	<ul id="menu" style="text-align:center;font-family: 'Roboto', sans-serif;">
-		<li data-menuanchor="home"><a href="#home"><i>Home</i></a></li>
-		<li data-menuanchor="about"><a href="#about"><i>About Us</i></a></li>
-		<li data-menuanchor="video"><a href="#video"><i>Videos</i></a></li>
-		<li data-menuanchor="proshows"><a href="#proshows"><i>Proshows</i></a></li>
-		<li data-menuanchor="events"><a href="#events"><i>Events</i></a></li>
-		<li data-menuanchor="outreach"><a href="#outreach"><i>Outreach Events</i></a></li>
-		<li data-menuanchor="previous_partners"><a href="#previous_partners"><i>Previous Partners</i></a></li>
-		<li data-menuanchor="media"><a href="#media"><i>Media Coverage</i></a></li>
-		<li data-menuanchor="reviews"><a href="#reviews"><i>Reviews</i></a></li>
-		<li data-menuanchor="contact"><a href="#contact"><i>Contact</i> Us</a></li>
-	</ul>
+	<div class="collapse navbar-collapse">
+		<ul id="menu" style="text-align:center;font-family: 'Roboto', sans-serif;">
+			<li data-menuanchor="home"><a href="#home"><i>Home</i></a></li>
+			<li data-menuanchor="about"><a href="#about"><i>About Us</i></a></li>
+			<li data-menuanchor="video"><a href="#video"><i>Videos</i></a></li>
+			<li data-menuanchor="proshows"><a href="#proshows"><i>Proshows</i></a></li>
+			<li data-menuanchor="events"><a href="#events"><i>Events</i></a></li>
+			<li data-menuanchor="outreach"><a href="#outreach"><i>Outreach Events</i></a></li>
+			<li data-menuanchor="previous_partners"><a href="#previous_partners"><i>Previous Partners</i></a></li>
+			<li data-menuanchor="media"><a href="#media"><i>Media Coverage</i></a></li>
+			<li data-menuanchor="reviews"><a href="#reviews"><i>Reviews</i></a></li>
+			<li data-menuanchor="contact"><a href="#contact"><i>Contact Us</i></a></li>
+		</ul>
+	</div>
+
+	<img style="position:fixed;bottom:0em;left:5px;z-index:11" class="img-responsive" src="images/saarang_logo.png">
+	<img style="position:fixed;bottom:0em;right:0;z-index:11" class="img-responsive" src="images/iitm_logo_white.png">
+	<img style="position:fixed;top:0em;right:5px;z-index:11" class="img-responsive" src="images/iso_logo_1.png">
 
 	<div id="myContainer">
 		<div class="section" id="section0">
@@ -139,24 +145,24 @@
 					</i>
 				</div>
 			</div>
-			<img style="position:absolute;bottom:0em;left:5px" src="images/iso_logo_1.png">
-			<img style="position:absolute;bottom:0em;right:0" src="images/iitm_logo_white.png">
 		</div>
 
 		<!-- About Us-->
 		<div class="section" id="section1" style="background-color:">
-			<div class="slide">
-				<div class="container">
+			<div class="slide" style="background:url('images/about.png') center no-repeat;background-size: contain">
+			</div>
+			<!-- <div class="slide">
+				<div class="container" style="background-color:#392F2E;color:white">
 					<div class="row center">
 						<h1>About Us</h1>
 					</div>
 					<div class="row">
 						<div class="col-md-12">
-							Content
+							
 						</div>
 					</div>	
 				</div>
-			</div>
+			</div> -->
 			<div class="slide">
 				<!-- <div class="conatiner">
 					<div class="row">
@@ -207,8 +213,6 @@
 			</div>
 			<div class="slide" style="background:url('images/popular.png') center no-repeat;background-size: contain">
 			</div>
-			<img style="position:absolute;bottom:0em;left:5px" src="images/saarang_logo.png">
-			<img style="position:absolute;bottom:0em;right:0" src="images/iitm_logo_white.png">
 		</div>
 
 		<!-- Events -->
@@ -231,8 +235,6 @@
 			</div>
 			<div class="slide" style="background:url('images/road.png') center no-repeat;background-size: contain">
 			</div>
-			<img style="position:absolute;bottom:0em;left:5px" src="images/saarang_logo.png">
-			<img style="position:absolute;bottom:0em;right:0" src="images/iitm_logo_white.png">
 		</div>
 		
 		<!-- Outreach -->
@@ -243,8 +245,6 @@
 			</div>
 			<div class="slide" style="background:url('images/milan.png') center no-repeat;background-size: contain">
 			</div>
-			<img style="position:absolute;bottom:0em;left:5px" src="images/saarang_logo.png">
-			<img style="position:absolute;bottom:0em;right:0" src="images/iitm_logo_white.png">
 		</div>
 		<!-- Previous partners -->
 		<div class="section" id="section6">
@@ -252,96 +252,104 @@
 			</div>
 			<div class="slide" style="background:url('images/pp2.png') center no-repeat;background-size: contain">
 			</div>
-			<img style="position:absolute;bottom:0em;left:5px" src="images/saarang_logo.png">
-			<img style="position:absolute;bottom:0em;right:0" src="images/iitm_logo_white.png">
 		</div>
 		<div class="section" id="section7">
 			<div class="slide" style="background:url('images/media1.png') center no-repeat;background-size: contain">
 			</div>
 			<div class="slide" style="background:url('images/media2.png') center no-repeat;background-size: contain">
 			</div>
-			<img style="position:absolute;bottom:0em;left:5px" src="images/saarang_logo.png">
-			<img style="position:absolute;bottom:0em;right:0" src="images/iitm_logo_white.png">
 		</div>
 
 		<!-- Reviews -->
 		<div class="section" id="section8">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3000">
-						  <!-- Carousel indicators -->
-		                  <ol class="carousel-indicators">
-						    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
-						    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
-						    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
-		                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
-		                    <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
-		                    <li data-target="#fade-quote-carousel" data-slide-to="5"></li>
-						  </ol>
-						  <!-- Carousel items -->
-						  <div class="carousel-inner">
-						    <div class="active item">
-		                        <div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
-						    	<i>
-							    	<blockquote>
-							    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-							    		<h4 style="color:#777">Kamal</h4>
-							    	</blockquote>
-						    	</i>	
-						    </div>
-						    <div class="item">
-		                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
-						    	<i>
-							    	<blockquote>
-							    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-							    		<h4 style="color:#777">Kamal</h4>
-							    	</blockquote>
-						    	</i>
-						    </div>
-						    <div class="item">
-		                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
-						    	<i>
-							    	<blockquote>
-							    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-							    		<h4 style="color:#777">Kamal</h4>
-							    	</blockquote>
-						    	</i>
-						    </div>
-		                    <div class="item">
-		                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
-		    			    	<i>
-							    	<blockquote>
-							    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-							    		<h4 style="color:#777">Kamal</h4>
-							    	</blockquote>
-						    	</i>
-						    </div>
-		                    <div class="item">
-		                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
-		    			    	<i>
-							    	<blockquote>
-							    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-							    		<h4 style="color:#777">Kamal</h4>
-							    	</blockquote>
-						    	</i>
-						    </div>
-		                    <div class="item">
-		                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
-		    			    	<i>
-							    	<blockquote>
-							    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-							    		<h4 style="color:#777">Kamal</h4>
-							    	</blockquote>
-						    	</i>
-						    </div>
-						  </div>
-						</div>
-					</div>							
+			<div class="slide">
+
+			</div>
+			<div class="slide">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="carousel slide" id="fade-quote-carousel" data-ride="carousel" data-interval="3500">
+							  <!-- Carousel indicators -->
+			                  <ol class="carousel-indicators">
+							    <li data-target="#fade-quote-carousel" data-slide-to="0"></li>
+							    <li data-target="#fade-quote-carousel" data-slide-to="1"></li>
+							    <li data-target="#fade-quote-carousel" data-slide-to="2" class="active"></li>
+			                    <li data-target="#fade-quote-carousel" data-slide-to="3"></li>
+			                    <li data-target="#fade-quote-carousel" data-slide-to="4"></li>
+			                    <li data-target="#fade-quote-carousel" data-slide-to="5"></li>
+							  </ol>
+							  <!-- Carousel items -->
+							  <div class="carousel-inner">
+							    <div class="active item">
+			                        <div class="profile-circle" style="background-color: rgba(0,0,0,.2);"></div>
+							    	<i>
+								    	<blockquote>
+								    		<p>I don't know your names like you know mine, you're all a single face to me, the face of IIT, and I salute you</p>
+								    		<h4 style="color:#777">Kamal Hassan</h4>
+								    	</blockquote>
+							    	</i>	
+							    </div>
+							    <div class="item">
+			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+							    	<i>
+								    	<blockquote>
+								    		<p>I'm totally speechless about how I felt performing at IIT SAARANG last night. All I can say is you guys were CRAZY!!AND YOU DROVE ME MAAAAD!! UNFORGETTABLE NIGHT!!</p>
+								    		<h4 style="color:#777">Sunidhi Chauhan</h4>
+								    	</blockquote>
+							    	</i>
+							    </div>
+							    <div class="item">
+			                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
+							    	<i>
+								    	<blockquote>
+								    		<p>Thank u chennai for making it so very special for us. Every moment of the show was magic. Because of u.Thank u so much!!! Love</p>
+								    		<h4 style="color:#777">Vishal & Shekar</h4>
+								    	</blockquote>
+							    	</i>
+							    </div>
+			                    <div class="item">
+			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+			    			    	<i>
+								    	<blockquote>
+								    		<p>Thanx a lot IIT for the terrific response for last nite's show. U guys doubled my energy..!!!! <br> Keep Rockin IIT!!!</p>
+								    		<h4 style="color:#777">Devi Sri Prasad</h4>
+								    	</blockquote>
+							    	</i>
+							    </div>
+			                    <div class="item">
+			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+			    			    	<i>
+								    	<blockquote>
+								    		<p>The crowd was just fantastic! So loud and respectful. It was overwhelming! Thank you so much for your hospitality</p>
+								    		<h4 style="color:#777">Mikael Akerfeldt, Opeth frontman</h4>
+								    	</blockquote>
+							    	</i>
+							    </div>
+			                    <div class="item">
+			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+			    			    	<i>
+								    	<blockquote>
+								    		<p>India tour was amazing !! Love India !! Love Saarang !!</p>
+								    		<h4 style="color:#777">Bud McMuffin</h4>
+								    	</blockquote>
+							    	</i>
+							    </div>
+							    <div class="item">
+			                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div>
+			    			    	<i>
+								    	<blockquote>
+								    		<p>It was a great experience to share our thoughts on Indian Music @ IIT Saarang. A lot of interesting questions were asked and we enjoyed every bit</p>
+								    		<h4 style="color:#777">Srikrishna Mohan</h4>
+								    	</blockquote>
+							    	</i>
+							    </div>
+							  </div>
+							</div>
+						</div>							
+					</div>
 				</div>
 			</div>
-			<img style="position:absolute;bottom:0em;left:5px" src="images/saarang_logo.png">
-			<img style="position:absolute;bottom:0em;right:0" src="images/iitm_logo_white.png">
 		</div>
 
 		<!-- Contact -->
@@ -402,8 +410,6 @@
 					</div>
 				</div>
 			</div>
-			<img style="position:absolute;bottom:0em;left:5px" src="images/saarang_logo.png">
-			<img style="position:absolute;bottom:0em;right:0" src="images/iitm_logo_white.png">
 		</div>
 	</div>
 
