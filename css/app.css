@@ -175,7 +175,8 @@ a:hover
 	transition: color 0.35s ease-in-out, background-color 0.35s ease-in-out;
 }
 .fp-tableCell{
-	padding:0 5em 0 5em;
+  height:100%;
+	/*padding:0 5em 0 5em;*/
 }
 .profile-circle:before {      /* create a full-height inline block pseudo-element */
     content: ' ';
