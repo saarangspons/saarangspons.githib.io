@@ -24,26 +24,28 @@
 	<script src="js/jquery-2.2.0.min.js"></script>
 	<!-- <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
 	<script src="js/jquery-ui.min.js"></script>
-	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
 	<script src="js/jquery.fullPage.js"></script>
-	<script src="js/examples.js"></script>
+	<!-- <script src="js/examples.js"></script> -->
 	<script>
 	 $(document).ready(function() {
 
 			function initialization(){
 				$('#myContainer').fullpage({
 					sectionsColor: ['#161616', '#161616','#161616', '#161616', '#161616', '#161616','#161616','#161616', '#161616', '#161616'],
-					anchors: ['home', 'about','proshows', 'events','outreach','previous_partners','media','reviews','contact','lastpage'],
-					resize: false,
+					anchors: ['home', 'about','proshows', 'events','outreach','previous_partners','media','reviews','contact'],
+					resize: true,
 					animateAnchor:false,
-					scrollOverflow: true,
+					// scrollOverflow: true,
 					autoScrolling:true,
 					responsive: 900,
-					fitSection: false,
+					// fitSection: false,
 					menu: '#menu',
 					navigation:true,
 					continuousVertical:true,
 					css3: true,
+					loopTop: true,
+					loopBottom: true,
 					onLeave: function(index, nextIndex, direction){
 						console.log("onLeave--" + "index: " + index + " nextIndex: " + nextIndex + " direction: " +  direction);
 					},
@@ -80,90 +82,56 @@
 		}
 		#section0{
 			padding:4.0em 0 0 0;
+			position: relative;
+			height:20%;
 		}
 		.section{
 			background-image: url('images/background.png');
 			font-family:'Roboto', sans-serif;
 			padding:1.75em 0 0 0;
 		}
-		#myVideo{
+		/*#myVideo{
 			position: absolute;
-			/*right: 0;*/
-			/*bottom: 0;*/
+			right: 0;
+			bottom: 0;
 			top:0;
 			left:0;
 			width:25%;
 			height:100%;
-			/*background-size: 100% 100%;*/
-	  		background-image: /* our video */;
+			background-size: 100% 100%;
+	  		background-image: ;
 	  		background-position: center center;
 	  		background-size: contain;
-	   		object-fit: cover; /*cover video background */
+	   		object-fit: cover; 
 	   		z-index:3;
-		}
+		}*/
 	</style>
 </head>
 <body>
+	
+	<ul id="menu" style="text-align:center;font-family: 'Roboto', sans-serif;">
+		<li data-menuanchor="home"><a href="#home"><i>Home</i></a></li>
+		<li data-menuanchor="about"><a href="#about"><i>About Us</i></a></li>
+		<li data-menuanchor="proshows"><a href="#proshows"><i>Proshows</i></a></li>
+		<li data-menuanchor="events"><a href="#events"><i>Events</i></a></li>
+		<li data-menuanchor="outreach"><a href="#outreach"><i>Outreach Events</i></a></li>
+		<li data-menuanchor="previous_partners"><a href="#previous_partners"><i>Previous Partners</i></a></li>
+		<li data-menuanchor="media"><a href="#media"><i>Media Coverage</i></a></li>
+		<li data-menuanchor="reviews"><a href="#reviews"><i>Reviews</i></a></li>
+		<li data-menuanchor="contact"><a href="#contact"><i>Contact Us</i></a></li>
+	</ul>
 
-		<ul id="menu" style="text-align:center;font-family: 'Roboto', sans-serif;">
-			<li data-menuanchor="home"><a href="#home"><i>Home</i></a></li>
-			<li data-menuanchor="about"><a href="#about"><i>About Us</i></a></li>
-			<li data-menuanchor="proshows"><a href="#proshows"><i>Proshows</i></a></li>
-			<li data-menuanchor="events"><a href="#events"><i>Events</i></a></li>
-			<li data-menuanchor="outreach"><a href="#outreach"><i>Outreach Events</i></a></li>
-			<li data-menuanchor="previous_partners"><a href="#previous_partners"><i>Previous Partners</i></a></li>
-			<li data-menuanchor="media"><a href="#media"><i>Media Coverage</i></a></li>
-			<li data-menuanchor="reviews"><a href="#reviews"><i>Reviews</i></a></li>
-			<li data-menuanchor="contact"><a href="#contact"><i>Contact Us</i></a></li>
-		</ul>
 
 	<img style="position:fixed;bottom:0em;right:0;z-index:11" class="col-xs-1 img-responsive" src="images/iitm_logo_white.png">
 	<img style="position:fixed;bottom:0em;left:5px;z-index:11" class="col-xs-1 img-responsive" src="images/iso_logo_1.png">
 
 	<div id="myContainer">
 		<div class="section" id="section0">
+			<!-- <div class="slide">
+				<img class="img-responsive" style="margin:auto" src="images/about.png">
+			</div> -->
 			<div class="slide">
 				<img class="img-responsive" style="margin:auto" src="images/main.png">
-				<!-- <div class="row" style="padding-top:2em">
-					<div class="col-md-8 col-md-offset-2">
-						<img class="img-responsive" style="margin:auto" src="images/saarang.png">
-					</div>
-				</div>
-				<div class="row" style="color:white;font-family:'Roboto', sans-serif;">
-					<div class="col-xs-2 col-md-2 col-xs-offset-1 col-md-offset-1">
-						<img class="img-responsive" style="margin:auto" src="images/days.png">
-						<h4><i>5</i></h4>
-						<h4><i>DAYS</i></h4>	
-					</div>
-					<div class="col-xs-2 col-md-2">
-						<img class="img-responsive" style="margin:auto" src="images/pro.png">
-						<h4><i>5</i></h4>
-						<h4><i>PROSHOWS</i></h4>	
-					</div>
-					<div class="col-xs-2 col-md-2">
-						<img class="img-responsive" style="margin:auto" src="images/event.png">
-						<h4><i>50+</i></h4>
-						<h4><i>EVENTS</i></h4>	
-					</div>
-					<div class="col-xs-2 col-md-2">
-						<img class="img-responsive" style="margin:auto" src="images/footfall.png">
-						<h4><i>50000+</i></h4>
-						<h4><i>FOOTFALL</i></h4>	
-					</div>
-					<div class="col-xs-2 col-md-2">
-						<img class="img-responsive" style="margin:auto" src="images/corporate.png">
-						<h4><i>125+</i></h4>
-						<h4><i>CORPORATE HOUSES</i></h4>	
-					</div>
-				</div> -->
-
-			<!-- <div class="row" style="margin-top:2em">
-				<div class="col-md-10 col-md-offset-1">
-					<i>
-						<span style="color:white;font-size:1.5em;font-family: 'Roboto', sans-serif;">Saarang is the annual cultural festival of Indian Institute of Technology, Madras. Accredited with heritage stretching from the late 70s, Saarang has grown to be the largest student-run college festival in the country, with ISO 9001:2008 certification. With a footfall of over 50,00 and attracting demographic diversity that very few can boast of, Saarang remains an unrivaled platform for showcasing the  enthusiasm and creativity of the youth.</span>
-					</i>
-				</div>
-			</div> -->
 			</div>
 		</div>
 
@@ -171,36 +139,6 @@
 		<div class="section" id="section1">
 			<div class="slide">
 				<img class="img-responsive" style="margin:auto" src="images/about.png">
-				<!-- <div class="container" style="background-color:#392F2E;color:white;">
-					<div class="row center">
-						<h1>About Us</h1>
-					</div>
-					<div class="row">
-						<div class="col-md-12" style="font-size:0.5em;padding:4em">
-							<p align="left">IIT Madras was established in 1959 with a vision to strive continuously for excellence in education, research and technological service to the nation. Since inception, IIT Madras continues to maintain a leadership position in these areas. In the first ever India Rankings introduced by the MHRD, IIT Madras has been ranked as the best Research and Training Institute in Engineering for 2016. Towards realizing this inspiring vision and to nurture creativity, competitive spirit, a fine sense of aesthetics and appreciation of various arts among our youth, Saarang, arguably India's largest, most exciting and competitive student's cultural festival, is organized annually by IIT Madras to provide a unique and matchless platform.</p>
-							
-							<p align="left">The history of Saarang is woven strongly into that of IIT Madras. Saarang means many things to many people. To the ISO certified student organization who's Herculean grit and dedication manifest in the professionalism with which the festival is organized, it showcases their exceptional organizational capabilities. To the large number of spectators, it is a 'wow' experience with art and culture that they have in the country. In fact, many globally renowned personalities of the world of arts have expressed the highest appreciation for their Saarang experience, and several among them had their careers first flagged off at Saarang (earlier Mardi Gras).</p>
-
-							<p align="left">Be it the immense talent pool that Saarang attracts or thousands of spectators who throng the venues or the maestros or virtuosos who give scintillating performances, Saarang has carved a very special niche for itself -  that of being THE student's cultural festival in India catering to the finest among professionals, connoisseurs, passionate amateurs and excited audiences.</p>
-
-							<p align="left">Over the years, many reputed sponsors has associated themselves enthusiastically with Saarang. We look forward to your association with Saarang 2017 at IIT Madras.</p>
-						</div>
-					</div>
-					<div class="row" style="margin:0px">
-						<div class="col-md-6">
-							<h3 style="font-weight:400"><b>Prof. M.S.Sivakumar</b></h3>
-							<h3 style="margin:0px"><i>Dean (Students)</i></h3>	
-							<h3 style="margin:0px"><i>IIT Madras</i></h3>
-						</div>
-						<div class="col-md-6">
-							<h3 style="font-weight:400"><b>Prof. Umakanth Dash</b></h3>
-							<h3 style="margin:0px"><i>Cultural advisor</i></h3>	
-							<h3 style="margin:0px"><i>IIT Madras</i></h3>
-						</div>
-					</div>	
-					<br>
-					<br>
-				</div> -->
 			</div>
 			<div class="slide">
 				<header>
